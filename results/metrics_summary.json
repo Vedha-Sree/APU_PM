@@ -1,0 +1,262 @@
+{
+    "Reconstruction_Metrics_Table_I": [
+        {
+            "Model": "Autoencoder",
+            "MAE": 0.143034,
+            "MSE": 0.093121,
+            "RMSE": 0.305158,
+            "Train_Time_Sec": 5.28
+        },
+        {
+            "Model": "LSTM",
+            "MAE": 0.075858,
+            "MSE": 0.035233,
+            "RMSE": 0.187704,
+            "Train_Time_Sec": 15.0
+        },
+        {
+            "Model": "LSTM + Autoencoder",
+            "MAE": 0.586221,
+            "MSE": 1.203583,
+            "RMSE": 1.097079,
+            "Train_Time_Sec": 20.77
+        },
+        {
+            "Model": "Proposed Attention-LSTM-AE",
+            "MAE": 0.476531,
+            "MSE": 0.973184,
+            "RMSE": 0.986501,
+            "Train_Time_Sec": 21.98
+        }
+    ],
+    "Classification_Metrics_Table_II": [
+        {
+            "Model": "Autoencoder",
+            "Accuracy": 0.9673,
+            "Precision": 0.2941,
+            "Recall": 0.0769,
+            "F1_score": 0.122,
+            "TP": 30,
+            "FP": 72,
+            "TN": 12735,
+            "FN": 360,
+            "Threshold": 0.626473,
+            "Calibration_Normal_Windows": 4198
+        },
+        {
+            "Model": "LSTM",
+            "Accuracy": 0.9645,
+            "Precision": 0.1938,
+            "Recall": 0.0641,
+            "F1_score": 0.0963,
+            "TP": 25,
+            "FP": 104,
+            "TN": 12703,
+            "FN": 365,
+            "Threshold": 0.313058,
+            "Calibration_Normal_Windows": 4198
+        },
+        {
+            "Model": "LSTM + Autoencoder",
+            "Accuracy": 0.9673,
+            "Precision": 0.3084,
+            "Recall": 0.0846,
+            "F1_score": 0.1328,
+            "TP": 33,
+            "FP": 74,
+            "TN": 12733,
+            "FN": 357,
+            "Threshold": 9.207124,
+            "Calibration_Normal_Windows": 4198
+        },
+        {
+            "Model": "Proposed Attention-LSTM-AE",
+            "Accuracy": 0.9673,
+            "Precision": 0.2981,
+            "Recall": 0.0795,
+            "F1_score": 0.1255,
+            "TP": 31,
+            "FP": 73,
+            "TN": 12734,
+            "FN": 359,
+            "Threshold": 9.286926,
+            "Calibration_Normal_Windows": 4198
+        }
+    ],
+    "Lead_Time_Assessments": {
+        "Autoencoder": [
+            {
+                "Failure_ID": "F1",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-04-18 00:00:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Not evaluated in supplied data"
+            },
+            {
+                "Failure_ID": "F2",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-05-29 23:30:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Not evaluated in supplied data"
+            },
+            {
+                "Failure_ID": "F3",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-06-05 10:00:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Missed Early Warning"
+            },
+            {
+                "Failure_ID": "F4",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-07-15 14:30:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Missed Early Warning"
+            }
+        ],
+        "LSTM": [
+            {
+                "Failure_ID": "F1",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-04-18 00:00:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Not evaluated in supplied data"
+            },
+            {
+                "Failure_ID": "F2",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-05-29 23:30:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Not evaluated in supplied data"
+            },
+            {
+                "Failure_ID": "F3",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-06-05 10:00:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Missed Early Warning"
+            },
+            {
+                "Failure_ID": "F4",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-07-15 14:30:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Missed Early Warning"
+            }
+        ],
+        "LSTM + Autoencoder": [
+            {
+                "Failure_ID": "F1",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-04-18 00:00:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Not evaluated in supplied data"
+            },
+            {
+                "Failure_ID": "F2",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-05-29 23:30:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Not evaluated in supplied data"
+            },
+            {
+                "Failure_ID": "F3",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-06-05 10:00:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Missed Early Warning"
+            },
+            {
+                "Failure_ID": "F4",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-07-15 14:30:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Missed Early Warning"
+            }
+        ],
+        "Proposed Attention-LSTM-AE": [
+            {
+                "Failure_ID": "F1",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-04-18 00:00:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Not evaluated in supplied data"
+            },
+            {
+                "Failure_ID": "F2",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-05-29 23:30:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Not evaluated in supplied data"
+            },
+            {
+                "Failure_ID": "F3",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-06-05 10:00:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Missed Early Warning"
+            },
+            {
+                "Failure_ID": "F4",
+                "Failure_Type": "Air Leak",
+                "Failure_Start": "2020-07-15 14:30:00",
+                "First_Alert": "N/A",
+                "Lead_Time_Hours": 0.0,
+                "Status": "Missed Early Warning"
+            }
+        ]
+    },
+    "Dataset_Info": {
+        "Raw_Total_Rows": 1516948,
+        "Rows_After_Downsampling": 151695,
+        "Features": [
+            "TP2",
+            "TP3",
+            "H1",
+            "DV_pressure",
+            "Reservoirs",
+            "Oil_temperature",
+            "Motor_current",
+            "COMP",
+            "DV_electric",
+            "Towers",
+            "MPG",
+            "LPS",
+            "Pressure_switch",
+            "Oil_level",
+            "Caudal_impulses"
+        ],
+        "Window_Size": 30,
+        "Step_Size": 5,
+        "Downsample_Step": 10,
+        "Train_Start": "2020-02-01 00:00:00",
+        "Train_End_Exclusive": "2020-05-01 00:00:00",
+        "Calibration_Start": "2020-05-01 00:00:00",
+        "Calibration_End_Exclusive": "2020-06-01 00:00:00",
+        "Test_Start": "2020-06-01 00:00:00",
+        "Train_Normal_Windows": 12696,
+        "Calibration_Normal_Windows": 4198,
+        "Test_Windows": 13197,
+        "Test_Anomaly_Windows": 390,
+        "Seed": 42,
+        "Epochs": 8,
+        "Batch_Size": 64,
+        "Threshold_Method": "normal_calibration_percentile_99.5",
+        "Metric_Source": "Fresh local training run"
+    }
+}
